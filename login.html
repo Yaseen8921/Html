@@ -1,0 +1,85 @@
+<html>
+    <head>
+    
+            <style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 300px;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f0f0f0;
+}
+
+button {
+  background-color: #ffc000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e0ab00;
+}
+
+.message {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+margin: 10px auto;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.message:hover {
+opacity: 0.8;
+}
+
+</style>
+        <body>
+        
+
+
+            <div class="container">
+                <form action=""method ="POST">
+                    {% csrf_token %}
+                  <h1>Login Now</h1>
+                  <input type="text" id="name" name="name" placeholder="Name" required>   
+                  <input type="text" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                  <button type="submit" name="submit" class="btn">Login</button>
+                </form>
+              </div>
+
+            <script src="" async defer></script>
+        </body>
+    </head>
+    
+</html>
